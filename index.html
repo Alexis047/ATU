@@ -4,10 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About the universe</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <header>
+    <img src="images/logotype.png" alt="">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="">Prochaine mission</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <aside>
+      <ul>
+        <li>
+          <a href="planets.html"><i class='bx bxs-planet rotate-70'></i></a>
+          <a href="planets.html">Planètes</a>
+        </li>
+        <li>
+          <a href="vehicles.html"><i class='bx bxs-rocket'></i></a>
+          <a href="vehicles.html">Véhicules</a>
+        </li>
+        <li>
+          <a href="people.html"><i class='bx bxs-face'></i></a>
+          <a href="people.html">Personnes</a>
+        </li>
+      </ul>
+    </aside>
+
+    <section>
+      <article class="discover">
+        <h1 class="homepage-title">About the Universe</h1>
+        <p class="mb-6">Bienvenue sur <span>About the Universe</span> pour découvrir toutes nos découvertes à propos du monde qui nous entoure !</p>
+        <a class="btn">Découvrir</a>
+      </article>
+
+      <article class="numbers">
+        <h2 class="homepage-title">Les chiffres</h2>
+        <p class="mb-6">Nous vous efforçons à archiver toutes nos trouvailles pour vous les partager autant que possible !</p>
+
+        <div class="main-data-container">
+          <div class="data-container">
+            <img src="./images/group.svg" alt="group icon">
+            <div class="data">
+              <p>Nombre d'êtres vivants recensés</p>
+              <p class="alive-number italic"></p>
+            </div>
+          </div>
+          <div class="data-container">
+            <img src="./images/rocket.svg" alt="rocket">
+            <div class="data">
+              <p>Nombre de véhicules recensés</p>
+              <p class="vehicle-number italic"></p>
+            </div>
+          </div>
+          <div class="data-container">
+            <img src="./images/planet.svg" alt="planet">
+            <div class="data">
+              <p>Nombre de planètes recensés</p>
+              <p class="planet-number italic"></p>
+            </div>
+          </div>
+          <div class="data-container">
+            <img src="./images/time.svg" alt="clock">
+            <div class="data">
+              <p>Prochaine mission</p>
+              <p class="next-mission italic">21 Juin 2023</p>
+            </div>
+          </div>
+        </div>
+        <a class="btn">Participer à la prochaine mission</a>
+      </article>
+    </section>
+  </main>
 </body>
 </html>

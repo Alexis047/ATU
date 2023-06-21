@@ -1,0 +1,154 @@
+@import "../styles/root.scss";
+
+body {
+  background-color: var(--background);
+  font-family: var(--body-font);
+}
+
+main {
+  display: flex;
+  
+  height: 90vh;
+
+  aside {
+    position: fixed;
+    height: 90vh;
+    width: 6vw;
+    border-right: 2px solid var(--primary-text-color);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 50vh;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+
+        a {
+          color: var(--primary-text-color);
+          transition: 0.3s;
+
+          i {
+            transform: scale(3.5);
+            margin-top: 5vh;
+            margin-bottom: 3.5vh;
+          }
+
+          .rotate-90 {
+            transform: rotate(70deg) scale(3.5);
+          }
+        }
+      }
+
+      li:hover {
+        a {
+          color: var(--second-text-color);
+        }
+      }
+    }
+  }
+
+  section {
+    color: var(--primary-text-color);
+    margin-left: 6vw;
+    width: 94vw;
+
+    article {
+      margin: 5vh auto;
+      width: 95%;
+      border: 2px solid var(--primary-text-color);
+      padding: 1.5% 1.5% 2.5%;
+
+      .homepage-title {
+        color: var(--second-text-color);
+        font-weight: var(--bold);
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+      }
+
+      span {
+        text-transform: uppercase;
+        color: var(--second-text-color);
+      }
+
+      .mb-6 {
+        margin-bottom: 6vh;
+      }
+
+      .btn {
+        text-transform: uppercase;
+        padding: 1%;
+        border: 2px solid var(--primary-text-color);
+        background-color: var(--background);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .btn:hover {
+        border: 2px solid var(--background);
+        background-color: var(--primary-text-color);
+        color: var(--background);
+      }
+    }
+
+    .discover {
+      background-image: url(../ATU/images/discover.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom:  15vh;
+    }
+
+    .numbers {
+      background-image: url(../ATU/images/numbers.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      .main-data-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .data-container {
+          display: flex;
+
+          img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+          }
+
+          .data {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              margin-bottom: 1vh;
+              color: var(--second-text-color);
+            }
+
+            .italic {
+              color: var(--primary-text-color);
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+      .btn {
+        text-align: right;
+        position: absolute;
+        bottom: 8%;
+        right: 1.5%;
+      }
+    }
+  }
+}
