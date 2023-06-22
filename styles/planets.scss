@@ -1,0 +1,89 @@
+.planets {
+  color: var(--primary-text-color);
+  margin-left: 6vw;
+  width: 94vw;
+  display: flex;
+
+  article {
+    margin: 5vh auto;
+    border: 2px solid var(--primary-text-color);
+    padding: 1.5% 1.5% 2.5%;
+  }
+
+  .planets-list {
+    background-image: url(../ATU/images/numbers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 35%;
+    height: 80%;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: var(--bold);
+      margin-bottom: 15px;
+    }
+
+    #filter, input {
+      border: 2px solid var(--primary-text-color);
+      background-color: var(--background);
+      color: var(--primary-text-color);
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      display: block;
+      width: 97%;
+    }
+
+    .planets-list-header {
+      background-color: var(--second-text-color);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+      border-bottom: 1px solid var(--primary-text-color);
+
+      p {
+        font-weight: var(--bold);
+      }
+    }
+
+    .planets-list-number {
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    .planets-container {
+      width: 100%;
+      max-height: 65%;
+      overflow: hidden;
+      overflow-y: scroll;
+      scrollbar-color: transparent;
+      scrollbar-width: none;
+
+      .planet {
+        width: 100%;
+        padding: 15px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--primary-text-color);
+      }
+
+      .planet:hover {
+        background-color: rgb(94, 150, 183, 0.8);
+      }
+    }
+
+    .planets-container::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .planet-info {
+    width: 60%;
+  }
+}

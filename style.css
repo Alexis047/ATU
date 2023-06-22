@@ -79,6 +79,7 @@ header {
 header img {
   align-self: flex-start;
   margin-right: 50px;
+  height: 90%;
 }
 header ul {
   display: flex;
@@ -150,32 +151,32 @@ main aside ul li a .rotate-90 {
 main aside ul li:hover a {
   color: var(--second-text-color);
 }
-main section {
+main .homepage {
   color: var(--primary-text-color);
   margin-left: 6vw;
   width: 94vw;
 }
-main section article {
+main .homepage article {
   margin: 5vh auto;
   width: 95%;
   border: 2px solid var(--primary-text-color);
   padding: 1.5% 1.5% 2.5%;
 }
-main section article .homepage-title {
+main .homepage article .homepage-title {
   color: var(--second-text-color);
   font-weight: var(--bold);
   font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 3vh;
 }
-main section article span {
+main .homepage article span {
   text-transform: uppercase;
   color: var(--second-text-color);
 }
-main section article .mb-6 {
+main .homepage article .mb-6 {
   margin-bottom: 6vh;
 }
-main section article .btn {
+main .homepage article .btn {
   text-transform: uppercase;
   padding: 1%;
   border: 2px solid var(--primary-text-color);
@@ -183,55 +184,130 @@ main section article .btn {
   cursor: pointer;
   transition: 0.5s;
 }
-main section article .btn:hover {
+main .homepage article .btn:hover {
   border: 2px solid var(--background);
   background-color: var(--primary-text-color);
   color: var(--background);
 }
-main section .discover {
+main .homepage .discover {
   background-image: url(../ATU/images/discover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 15vh;
 }
-main section .numbers {
+main .homepage .numbers {
   background-image: url(../ATU/images/numbers.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
 }
-main section .numbers .main-data-container {
+main .homepage .numbers .main-data-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
 }
-main section .numbers .main-data-container .data-container {
+main .homepage .numbers .main-data-container .data-container {
   display: flex;
 }
-main section .numbers .main-data-container .data-container img {
+main .homepage .numbers .main-data-container .data-container img {
   height: 50px;
   width: 50px;
   margin-right: 10px;
 }
-main section .numbers .main-data-container .data-container .data {
+main .homepage .numbers .main-data-container .data-container .data {
   display: flex;
   flex-direction: column;
 }
-main section .numbers .main-data-container .data-container .data p {
+main .homepage .numbers .main-data-container .data-container .data p {
   margin-bottom: 1vh;
   color: var(--second-text-color);
 }
-main section .numbers .main-data-container .data-container .data .italic {
+main .homepage .numbers .main-data-container .data-container .data .italic {
   color: var(--primary-text-color);
   font-style: italic;
 }
-main section .numbers .btn {
-  text-align: right;
+main .homepage .numbers .btn {
   position: absolute;
-  bottom: 8%;
-  right: 1.5%;
+  bottom: 10%;
+  right: 6%;
+}
+
+.planets {
+  color: var(--primary-text-color);
+  margin-left: 6vw;
+  width: 94vw;
+  display: flex;
+}
+.planets article {
+  margin: 5vh auto;
+  border: 2px solid var(--primary-text-color);
+  padding: 1.5% 1.5% 2.5%;
+}
+.planets .planets-list {
+  background-image: url(../ATU/images/numbers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 35%;
+  height: 80%;
+}
+.planets .planets-list h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: var(--bold);
+  margin-bottom: 15px;
+}
+.planets .planets-list #filter, .planets .planets-list input {
+  border: 2px solid var(--primary-text-color);
+  background-color: var(--background);
+  color: var(--primary-text-color);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.planets .planets-list input {
+  display: block;
+  width: 97%;
+}
+.planets .planets-list .planets-list-header {
+  background-color: var(--second-text-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.planets .planets-list .planets-list-header p {
+  font-weight: var(--bold);
+}
+.planets .planets-list .planets-list-number {
+  margin-top: 20px;
+  font-style: italic;
+}
+.planets .planets-list .planets-container {
+  width: 100%;
+  max-height: 65%;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: transparent;
+  scrollbar-width: none;
+}
+.planets .planets-list .planets-container .planet {
+  width: 100%;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.planets .planets-list .planets-container .planet:hover {
+  background-color: rgba(94, 150, 183, 0.8);
+}
+.planets .planets-list .planets-container::-webkit-scrollbar {
+  display: none;
+}
+.planets .planet-info {
+  width: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */
